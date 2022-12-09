@@ -1,0 +1,12 @@
+function coinFlip(n){
+  var flips = [];
+  for ( var i = 0; i < n; i++ ){
+    if ( Math.random() > .5 ){
+      flips[i] = "Heads";
+    } else {
+      flips[i] = "Tails";  
+    }
+  }
+  return flips;
+}
+console.log(coinFlip(100));
